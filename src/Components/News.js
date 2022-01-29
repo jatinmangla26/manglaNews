@@ -360,7 +360,7 @@ export class News extends Component {
     console.log("Runned");
     return (
       <div className="container my-3">
-        <h2>ManglaNews</h2>
+        <h2>{this.props.category} --ManglaNews</h2>
         {this.state.loading && <Spinner></Spinner>}
         <div className="row">
           {!this.state.loading &&  this.state.articles.map((element) => {
